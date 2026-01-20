@@ -1,0 +1,81 @@
+{
+    "screen": {
+        "dpi": 1,
+        "dimensions": [800, 800],
+        "position": [-400, -400, 0],
+        "observer": [0, 0, -1000]
+    },
+    "medium": {
+        "ambient": [0.5, 0.5, 0.5],
+        "index": 1.0,
+        "recursion": 1
+    },
+    "sources": [
+        {
+            "position": [0, 300, 200],
+            "intensity": [1, 1, 1]
+        }
+    ],
+    "objects": [
+        {
+            "sphere": {
+                "position": [0, 100, 200],
+                "radius": 100.0,
+                "color": {
+                    "ambient": [1, 0, 0],
+                    "diffuse": [0, 0.8, 1],
+                    "specular": [1, 1, 1],
+                    "reflected": [0.5, 0.5, 0.5],
+                    "refracted": [0.5, 0.5, 0.5],
+                    "shininess": 32
+                },
+                "index": 1
+            }
+        },
+        {
+            "sphere": {
+                "position": [0, 0, 100],
+                "radius": 100.0,
+                "color": {
+                    "ambient": [0, 0, 1],
+                    "diffuse": [0, 0.8, 1],
+                    "specular": [1, 1, 1],
+                    "reflected": [0.5, 0.5, 0.5],
+                    "refracted": [0.5, 0.5, 0.5],
+                    "shininess": 32
+                },
+                "index": 1
+            }
+        },
+        {
+            "halfSpace": {
+                "position": [0, 0, 200],
+                "normal": [0, 1, 0],
+                "color": {
+                    "ambient": [0.6, 1, 1],
+                    "diffuse": [0.6, 1, 1],
+                    "specular": [1, 1, 1],
+                    "reflected": [0.5, 0.5, 0.5],
+                    "refracted": [0.5, 0.5, 0.5],
+                    "shininess": 32
+                },
+                "index": 1
+            }
+        },
+        {
+            "sphere": {
+                "position": [0, -100, 200],
+                "radius": 50.0,
+                "color": {
+                    "ambient": [0, 0.8, 1],
+                    "diffuse": [0, 0.8, 1],
+                    "specular": [1, 1, 1],
+                    "reflected": [0.5, 0.5, 0.5],
+                    "refracted": [0.5, 0.5, 0.5],
+                    "shininess": 32
+                },
+                "index": 1
+            }
+        }
+    ]
+}
